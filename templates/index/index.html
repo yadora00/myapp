@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+    <form action="" method="get">
+        <label>名前:<input type="text" size="20" name="QRid"></label>
+        <input type="submit" value="送信">
+    </form>
+    <br>
+    {% if getID %}
+        {{ root_tag }}
+    {% endif %}
+{% endblock %}
+</body>
+</html>
